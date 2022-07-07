@@ -1,7 +1,13 @@
+body {
+    max-height: 1000px;
+    width: 1000px;
+}
 .logo {
     width: 100px;
-    height: 100px;
-    animation: bounce 3s  1s infinite;
+    height: 200px;
+    padding-left: 500px;
+
+    animation: bounce 3s  0.5s infinite;
 }
 
 
