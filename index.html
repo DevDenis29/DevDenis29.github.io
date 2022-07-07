@@ -1,0 +1,30 @@
+组两人';
+    if(message) return Essage.show({ status: 'warning', message: message }, 2000);
+
+    arr[1] = size;
+    row(random.apply(null, arr));
+  });
+
+  sex.addEventListener('change', function() {
+    arr[2] = sex.checked;
+    row(random.apply(null, arr));
+  });
+
+  count.addEventListener('change', function() {
+    arr[3] = count.checked;
+    row(random.apply(null, arr));
+  });
+
+  function row(group) {
+    table.innerHTML = '';
+    group.forEach(function(team) {
+      var row = table.insertRow(-1);
+      row.insertCell(0).innerHTML = table.rows.length;
+      team.forEach(function(p) {
+        p && (row.insertCell(-1).innerHTML = p.name + '<small class="' + p.sex + '">' + p.sex[0].toUpperCase() + '<small>');
+      });
+    });
+  };
+</script>
+</body>
+</html>
