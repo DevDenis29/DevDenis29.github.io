@@ -1,0 +1,28 @@
+<title>Cookie Clicker</title>
+<script>
+var cookie = 1;
+var cpc = 1;
+var upgrade = 0;
+var coin = 0;
+
+
+function gCookie() {
+	cookie += cpc;
+	document.getElementById("cookieCount").innerHTML = cookie;
+	console.log(cookie);
+
+
+}
+</script>
+
+
+<p id="cookieCount">0</p>
+<p id="upgradeCount">0</p>
+<p id="coinCount">0</p>
+
+<input type="button" value="cookie" onclick="gCookie">
+
+<input type="button" value="upgrade" onclick="upgrade()">
+
+<input type="button" value="sell cookie for coins">
+
