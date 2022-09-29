@@ -63,7 +63,7 @@ const fetchChat = db.ref("messages/");
 // check for new messages using the onChildAdded event listener
 fetchChat.on("child_added", function (snapshot) {
   const messages = snapshot.val();
-    const message = `<div id="cont"><img id="pfp" src="./assets/img/Chungus.png"><li class=${
+    const message = `<div id="cont"><img id="pfp" src="./assets/img/logo_transparent.png"><li class=${
       username === messages.username ? "sent" : "receive"
     }><div id="cont">${messages.username}<sub>#${tag}</sub>: </span>${messages.message}</li></div>`;
     // append the message on the page
