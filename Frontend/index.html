@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chat">
+    <!-- messages will display here -->
+    <ul id="messages"></ul>
+    <center>
+    <div id="secret">
+      <h1>Secret Menu</h1>
+      <button id="play">🔊</button>
+      <br>
+      <button>STOP</button>
+    </div>
+  </center>
+    <!-- form to send message -->
+    <form id="message-form">
+      <input id="msg" autocomplete="off" placeholder="Message to.." type="text" required/>
+      <button  id="message-btn" type="submit"></button>
+    </form>
+  </div>
+
+  <!-- scripts -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+  <script src="./api/send.js"></script>
+</body>
+</html>
